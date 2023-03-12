@@ -3,7 +3,10 @@
     --title-text-color: #434455;
     --primary-text-color: #2e2f42;
     --button-color: #4d5ae5;
-    --white-back: #ffffff;
+    --white-back: #ffffff; 
+    --background-buttton: #404bbf;
+    --back-team: #f4f4fd;
+    --footer-text: #E7E9FC;
 }
 
 h1,
@@ -22,22 +25,23 @@ html {
     box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+img {
+    display: block;
+    min-width: 100%;
+    height: auto;
 }
 
 
 .container {
     width: 1158px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
 
 body {
     font-family: 'Roboto', sans-serif;
-    color:#434455;
+    color: var(--title-text-color);
 }
 
 /*------------------------HEAD--------------------------*/
@@ -54,8 +58,7 @@ body {
 
 
 .head {
-    background-color: var(--white-back);
-    border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1px solid var(--footer-text);
 }
 
 .head-nav {
@@ -66,16 +69,14 @@ body {
 
 .web-logo {
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--button-color);
+    margin-right: 76px;
 }
 
 
@@ -86,14 +87,13 @@ body {
 .head-menu,
 .head-adress {
     display: flex;
-    margin-left: 76px;
 }
 
 .head-nav-item {
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
-    font-style: normal;
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -107,7 +107,7 @@ body {
 
 .head-nav-item:hover,
 .head-nav-item:focus {
-    color: #404bbf;
+    color: var(--background-buttton);
 }
 
 .adress {
@@ -124,7 +124,7 @@ body {
 }
 .head-contacts:hover,
 .head-contacts:focus {
-    color: #404bbf;
+    color: var(--background-buttton);;
 }
 
 
@@ -132,21 +132,22 @@ body {
 
 
 .main {
-    background-color: #2E2F42;;
+    background-color: var(--primary-text-color);
+    padding-top: 188px;
     padding-bottom: 188px;
 }
 
 .main-title {
+    color: var(--white-back);
+    font-family: "Roboto";
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07;
+    line-height: 60px;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
-
-    padding-top: 188px;
-    margin-left: auto;
+    max-width: 496px;
     margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -158,7 +159,7 @@ body {
     letter-spacing: 0.04em;
     cursor: pointer;
     background-color: var(--button-color);
-    color: #FFFFFF;
+    color: var(--white-back);
 
     display: flex;
     align-items: center;
@@ -174,9 +175,14 @@ body {
     margin-left: auto;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+    cursor: pointer;
+}
+
 .section {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .section-topic {
@@ -221,7 +227,7 @@ body {
 }
 
 .photos {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
 
 
@@ -233,7 +239,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--primary-text-color);
-    margin-bottom: 72px;
+    padding-bottom: 72px;
 }
 
 
@@ -248,7 +254,7 @@ body {
 
 
 .team {
-    background-color: #f4f4fd;
+    background-color: var(--back-team);
 }
 
 .team-title {
@@ -273,12 +279,18 @@ body {
 .team-list {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    background: #F4F4FD;
+    background: var(--back-team);
 }
 
 
 .team-list:not(:last-child) {
     margin-right: 24px;
+}
+
+
+.team-block-text {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 
@@ -289,8 +301,10 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    padding-top: 32px;
+    margin-bottom: 8px;
+    
 }
+
 
 
 .team-text {
@@ -298,8 +312,8 @@ body {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #434455;
-    padding-bottom: 32px;
+    color: var(--title-text-color);
+    
 }
 
 
@@ -314,8 +328,8 @@ body {
 
 
 .footer {
-    background-color: #2E2F42;
-    padding: 101.5px 0;
+    background-color: var(--primary-text-color);
+    padding: 100px 0;
 }
 
 .foot-block {
@@ -329,8 +343,7 @@ body {
     font-size: 18px;
     line-height: 1.17;
 
-    display: flex;
-    align-items: center;
+    
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
@@ -339,7 +352,7 @@ body {
 
 
 .footer-studio-logo {
-    color:  #f4f4fd;
+    color:  var(--back-team);
 }
 
 
@@ -347,8 +360,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
-    margin-top: 17.5px;
+    color: var(--footer-text);
+    margin-top: 17px;
 }
 
 
@@ -390,7 +403,7 @@ body {
     letter-spacing: 0.04em;
     cursor: pointer;
     color: var(--button-color);
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--footer-text);
     border-radius: 4px;
     padding: 12px 24px;
     
@@ -399,18 +412,13 @@ body {
 
 .filter-btn:focus,
 .filter-btn:hover {
-    color: #ffffff;
-    background-color: #404bbf;
+    color: var(--white-back);
+    background-color: var(--background-buttton);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    
+    
 }
  
-.portfolio-img-block {
-    border-left: 1px solid #E7E9FC;
-    border-right: 1px solid #E7E9FC;
-    border-bottom: 1px solid #E7E9FC;
-}
-
 
 .section-img {
     display: flex;
@@ -420,24 +428,34 @@ body {
 }
 
 
+.portfolio-img-block {
+    border-left: 1px solid var(--footer-text);
+    border-right: 1px solid var(--footer-text);
+    border-bottom: 1px solid var(--footer-text);
+
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-bottom: 32px;
+       
+}
+
+
 .portfolio-section {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
-    padding-top: 32px;
+    color: var(--primary-text-color);
     margin-bottom: 8px;
-    padding-left: 16px;
+    
 }
 
 .portfolio-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    color: var(--title-text-color);
+ 
 }
 
 .portfolio-img {
