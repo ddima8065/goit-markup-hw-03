@@ -139,13 +139,14 @@ body {
 
 .main-title {
     color: var(--white-back);
-    font-family: "Roboto";
     font-weight: 700;
+    
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.1;
     text-align: center;
     letter-spacing: 0.02em;
     max-width: 496px;
+    
     margin-right: auto;
     margin-left: auto;
 }
@@ -255,6 +256,8 @@ body {
 
 .team {
     background-color: var(--back-team);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-title {
@@ -265,14 +268,13 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--primary-text-color);
-    padding-top: 120px;
+    
     margin-bottom: 72px;
 }
 
 
 .team-ul {
     display: flex;
-    padding-bottom: 120px;
 }
 
 
@@ -291,6 +293,7 @@ body {
 .team-block-text {
     padding-top: 32px;
     padding-bottom: 32px;
+    background: var(--white-back);
 }
 
 
@@ -386,7 +389,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 24px;
-    margin-top: 96px;
+    
     margin-bottom: 72px;
 }
 
@@ -403,6 +406,7 @@ body {
     letter-spacing: 0.04em;
     cursor: pointer;
     color: var(--button-color);
+    background: #F4F4FD;
     border: 1px solid var(--footer-text);
     border-radius: 4px;
     padding: 12px 24px;
@@ -420,11 +424,16 @@ body {
 }
  
 
+.portfolio-img-list {
+    width: 360px;
+}
+
+
 .section-img {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
-    margin-bottom: 120px;
+   
 }
 
 
@@ -433,6 +442,7 @@ body {
     border-right: 1px solid var(--footer-text);
     border-bottom: 1px solid var(--footer-text);
 
+    
     padding-top: 32px;
     padding-left: 16px;
     padding-bottom: 32px;
